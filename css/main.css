@@ -1,0 +1,168 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+html,
+body {
+  height: 100%;
+  font-family: Droid Arabic Kufi;
+  direction: rtl;
+ 
+  background-image: url(../img/1.jpg);
+  background-size: cover;
+}
+/*
+  bootstrap css
+*/
+.nav {
+  padding-right: 0;
+}
+.nav-link {
+  display: block;
+  padding: 10px 6px;
+}
+.nav-tabs .nav-link.active, .nav-tabs .nav-item.show .nav-link {
+  color: #ee8a00;
+  background-color: #f3f3f3;
+  border-color: #f3f3f3;
+}
+/*
+  bootstrap css
+*/
+form {
+  display: contents;
+}
+img {
+  width: 250px;
+}
+.content {
+  text-align: right;
+}
+.tab-content {
+  background: #f3f3f3;
+  padding: 30px 15px;
+  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+.nav-item a {
+  color: #676767;
+}
+.btn-seu {
+  background-color: #ee8a00;
+  color: #fff;
+}
+.btn-seu:hover {
+  background-color: #25206a;
+  color: #fff;
+}
+span.time {
+  background-color: #545454;
+    width: 80px;
+    text-align: center;
+    margin: 5px;
+    border-radius: 4px;
+}
+span.time a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.navigation {
+  padding: 6px;
+}
+.navigation a {
+  color: #303030;
+  text-decoration: none;
+}
+.navigation .logo {
+  text-align: right;
+}
+.navigation .logout {
+  text-align: left;
+}
+.footer {
+  color: #d8d8d8;
+  font-size: 12px;
+}
+.footer a {
+  text-decoration: none;
+  color: #d8d8d8;
+}
+.footer p {
+  margin: 0;
+}
+.footer .copyrith {
+  text-align: right;
+}
+.footer .support {
+  text-align: left;
+}
+
+
+
+/* stepper */
+ul.stepper .step::before {
+  color: #fff;
+  right: 1px;
+}
+ul.stepper .step:not(:last-of-type)::after {
+  right: 13.5px;
+}
+ul.stepper .step .step-content {
+  margin-right: 41px;
+  margin-left: 24px;
+}
+ul:not(.browser-default) {
+  padding-right: 0px;
+}
+ul.stepper .step .step-title {
+  margin: 0;
+}
+
+.input-field.col label {
+  right: .75rem;
+  left: auto;
+}
+.input-field>input[type]:-webkit-autofill:not(.browser-default):not([type="search"])+label, .input-field>input[type=date]:not(.browser-default)+label, .input-field>input[type=time]:not(.browser-default)+label {
+  -webkit-transform: translateY(-16px) scale(0.8);
+  transform: translateY(-16px) scale(0.8);
+  -webkit-transform-origin: 0 0;
+  transform-origin: 0 0;
+}
+input:not([type])+label:after, input[type=text]:not(.browser-default)+label:after, input[type=password]:not(.browser-default)+label:after, input[type=email]:not(.browser-default)+label:after, input[type=url]:not(.browser-default)+label:after, input[type=time]:not(.browser-default)+label:after, input[type=date]:not(.browser-default)+label:after, input[type=datetime]:not(.browser-default)+label:after, input[type=datetime-local]:not(.browser-default)+label:after, input[type=tel]:not(.browser-default)+label:after, input[type=number]:not(.browser-default)+label:after, input[type=search]:not(.browser-default)+label:after, textarea.materialize-textarea+label:after, .select-wrapper+label:after {
+  display: block;
+    content: "";
+    position: absolute;
+    top: 100%;
+    right: 0;
+    opacity: 0;
+    -webkit-transition: .2s opacity ease-out, .2s color ease-out;
+    transition: .2s opacity ease-out, .2s color ease-out;
+}
+input:not([type]).validate+label, input[type=text]:not(.browser-default).validate+label, input[type=password]:not(.browser-default).validate+label, input[type=email]:not(.browser-default).validate+label, input[type=url]:not(.browser-default).validate+label, input[type=time]:not(.browser-default).validate+label, input[type=date]:not(.browser-default).validate+label, input[type=datetime]:not(.browser-default).validate+label, input[type=datetime-local]:not(.browser-default).validate+label, input[type=tel]:not(.browser-default).validate+label, input[type=number]:not(.browser-default).validate+label, input[type=search]:not(.browser-default).validate+label, textarea.materialize-textarea.validate+label {
+  width: auto;
+}
+
+
+
+.active .circle-clipper.left .circle {
+  -webkit-animation: right-spin 1333ms cubic-bezier(0.4, 0, 0.2, 1) infinite both;
+  animation: right-spin 1333ms cubic-bezier(0.4, 0, 0.2, 1) infinite both;
+}
+
+.active .circle-clipper.right .circle {
+  -webkit-animation: left-spin 1333ms cubic-bezier(0.4, 0, 0.2, 1) infinite both;
+  animation: left-spin 1333ms cubic-bezier(0.4, 0, 0.2, 1) infinite both;
+}
+
+.overlay {
+  background: rgba(6, 12, 34, 0.8);
+  background: rgb(1, 24, 42);
+  background: radial-gradient(circle, rgba(1, 24, 42, 0.55) 0%, rgba(1, 24, 42, 0.8) 54%, rgba(1, 24, 42, 1) 99%);
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+
+}
