@@ -11,6 +11,17 @@ body {
   background-image: url(../img/1.jpg);
   background-size: cover;
 }
+.overlay {
+  background: rgba(6, 12, 34, 0.8);
+  background: rgb(1, 24, 42);
+  background: radial-gradient(circle, rgba(1, 24, 42, 0.55) 0%, rgba(1, 24, 42, 0.8) 54%, rgba(1, 24, 42, 1) 99%);
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+
+}
 /*
   bootstrap css
 */
@@ -25,6 +36,9 @@ body {
   color: #ee8a00;
   background-color: #f3f3f3;
   border-color: #f3f3f3;
+}
+.dropdown-toggle::after {
+  color: #01182a;
 }
 /*
   bootstrap css
@@ -68,10 +82,12 @@ span.time a {
 }
 
 .navigation {
-  padding: 6px;
+  padding: 5px 0px;
+  background: #ffffff;
+  border-bottom: 1px solid #f8f9fa;
 }
 .navigation a {
-  color: #303030;
+  color: #fff;
   text-decoration: none;
 }
 .navigation .logo {
@@ -79,6 +95,9 @@ span.time a {
 }
 .navigation .logout {
   text-align: left;
+}
+.navigation .btn span {
+  color: #01182a;
 }
 .footer {
   color: #d8d8d8;
@@ -101,12 +120,15 @@ span.time a {
 
 
 /* stepper */
+ul.stepper.horizontal .step.active .step-title::before, ul.stepper.horizontal .step.done .step-title::before {
+  background-color: #f28d1e;
+}
 ul.stepper .step::before {
   color: #fff;
-  right: 1px;
+  right: 5px;
 }
 ul.stepper .step:not(:last-of-type)::after {
-  right: 13.5px;
+  right: 17.5px;
 }
 ul.stepper .step .step-content {
   margin-right: 41px;
@@ -142,27 +164,13 @@ input:not([type])+label:after, input[type=text]:not(.browser-default)+label:afte
 input:not([type]).validate+label, input[type=text]:not(.browser-default).validate+label, input[type=password]:not(.browser-default).validate+label, input[type=email]:not(.browser-default).validate+label, input[type=url]:not(.browser-default).validate+label, input[type=time]:not(.browser-default).validate+label, input[type=date]:not(.browser-default).validate+label, input[type=datetime]:not(.browser-default).validate+label, input[type=datetime-local]:not(.browser-default).validate+label, input[type=tel]:not(.browser-default).validate+label, input[type=number]:not(.browser-default).validate+label, input[type=search]:not(.browser-default).validate+label, textarea.materialize-textarea.validate+label {
   width: auto;
 }
-
-
-
-.active .circle-clipper.left .circle {
-  -webkit-animation: right-spin 1333ms cubic-bezier(0.4, 0, 0.2, 1) infinite both;
-  animation: right-spin 1333ms cubic-bezier(0.4, 0, 0.2, 1) infinite both;
+ul.stepper.horizontal::before {
+  border-bottom: 1px solid #e6e6e6;
+  box-shadow: none;
 }
+/* end stepper */
 
-.active .circle-clipper.right .circle {
-  -webkit-animation: left-spin 1333ms cubic-bezier(0.4, 0, 0.2, 1) infinite both;
-  animation: left-spin 1333ms cubic-bezier(0.4, 0, 0.2, 1) infinite both;
-}
 
-.overlay {
-  background: rgba(6, 12, 34, 0.8);
-  background: rgb(1, 24, 42);
-  background: radial-gradient(circle, rgba(1, 24, 42, 0.55) 0%, rgba(1, 24, 42, 0.8) 54%, rgba(1, 24, 42, 1) 99%);
-  position: absolute;
-  bottom: 0;
-  top: 0;
-  left: 0;
-  right: 0;
 
-}
+
+
