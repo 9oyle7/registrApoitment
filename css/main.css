@@ -101,7 +101,7 @@ span.time a {
 }
 .footer {
   color: #d8d8d8;
-  font-size: 12px;
+  font-size: 13px;
 }
 .footer a {
   text-decoration: none;
@@ -117,10 +117,21 @@ span.time a {
   text-align: left;
 }
 
+.btn-continue{
+  color: #ffffff;
+    background-color: #163c79;
+    border-color: #163c79;
+}
+.btn-continue:hover,.btn-continue:focus {
+  color: #ffffff;
+  background-color: #f28d1e;
+  border-color: #f28d1e;
+}
 
 
 /* stepper */
-ul.stepper.horizontal .step.active .step-title::before, ul.stepper.horizontal .step.done .step-title::before {
+
+ul.stepper .step.active::before, ul.stepper .step.done::before {
   background-color: #f28d1e;
 }
 ul.stepper .step::before {
