@@ -14,33 +14,20 @@
   <body class="d-flex flex-column h-100">
     <div class="overlay"></div>
     <form action="">
-      <div class="navigation text-center">
+      <div class="navigation">
         <div class="container-fluid">
           <div class="row mb-0">
-            <div class="col logo">
-              <img src="img/logo-ar.png" alt="">
+            <div class="col-md-6 username">
+              
             </div>
-            <div class="col visitor">
-              <span> <a href="" class="nav-link">بوابة الزوار</a></span>
-            </div>
-            <div class="col logout">
-              <div class="dropdown d-inline">
-                <a class="btn btn-light dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
-                  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  <span>مرحبا :</span>
-                  <span>صالح الحميداني</span>
-                </a>
-  
-                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                  <a class="dropdown-item" href="#">معلوماتي الشخصية</a>
-                  <a class="dropdown-item" href="#">تغيير كلمة المرور</a>
-                  <a class="dropdown-item" href="#">تسجيل خروج</a>
-                </div>
+            <div class="col-md-6 lang">
+              <div class="d-inline br">
+                <a href="">بوابة الزوار</a>
               </div>
-              <div class="d-inline">
+              <div class="d-inline br">
                 <a href="">تواصل معنا</a>
               </div>
-              <div class="d-inline">
+              <div class="d-inline br">
                 <a href="">English</a>
               </div>
             </div>
@@ -49,13 +36,40 @@
       </div>
       <div class="container d-flex h-100">
         <div class="justify-content-center align-self-center w-100">
-          <div class="mx-auto">
+          <div class="login">
             <div class="content">
-  
-  
-              <div class="row">
-                <div class="col">1</div>
-                <div class="col">2</div>
+              <div class="row text-center">
+                <div class="col-auto m-auto">
+                  <div class="card login-card">
+                    <div class="card-header text-center">
+                      <img src="img/logo-color.png" alt="login" class="login-card-img">
+                    </div>
+                    <div class="card-body">
+                      <h2 class="login-card-title">تسجيل الدخول</h2>
+                      <p class="login-card-description">سجل الدخول الى حسابك للمتابعة</p>
+                      
+                        <div class="form-group">
+                          <label for="email" class="sr-only">البريد الإلكتروني</label>
+                          <input type="email" name="email" id="email" class="form-control" placeholder="البريد الإلكتروني">
+                        </div>
+                        <div class="form-group">
+                          <label for="password" class="sr-only">الرقم السري</label>
+                          <input type="password" name="password" id="password" class="form-control" placeholder="الرقم السري">
+                        </div>
+                        <input name="login" id="login" class="btn btn-block btn-login rounded-0" type="button" value="تسجيل الدخول">
+                        <div class="form-prompt-wrapper">
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                            <label class="form-check-label" for="defaultCheck1">
+                              تذكرني
+                            </label>
+                          </div>             
+                          <a href="pages/page1.html" class="text-reset">نسيت كلمة المرور ؟</a>
+                        </div>
+                        
+                      </div>
+                  </div>
+                </div>
               </div>
   
   
@@ -67,18 +81,18 @@
       </div>
     </form>
   
-    <footer class="footer mt-auto py-3">
+    <footer class="footer mt-auto">
       <div class="container-fluid text-center">
-        <div class="row">
-          <div class="col-md-6 copyrith">
-            <p>عمادة تقنية المعلومات</p>
-            <p>&copy; 2021 الجامعة السعودية الإلكترونية</p>
+        <div class="row mb-2">
+          <div class="col-md-6 ">
+            <div>تطوير عمادة تقنية المعلومات</div>
+            <div>جميع الحقوق محفوظة للجامعة السعودية الإلكترونية © 2021</div>
           </div>
-          <div class="col-md-6 support">
-            <p>الدعم الفني</p>
-            <a href="">
-              <p>email@seu.edu.sa</p>
-            </a>
+          <div class="col-md-6 ">
+            <div>الدعم الفني</div>
+            <div>
+              <a href="">email@seu.edu.sa</a>
+            </div>
           </div>
         </div>
       </div>

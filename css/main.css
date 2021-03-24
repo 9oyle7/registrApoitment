@@ -37,8 +37,25 @@ body {
   background-color: #f3f3f3;
   border-color: #f3f3f3;
 }
-.dropdown-toggle::after {
-  color: #01182a;
+.dropdown-menu.show {
+  text-align: center;
+}
+.dropdown-item:hover, .dropdown-item:focus {
+  color: #ffffff;
+  text-decoration: none;
+  background-color: #173c79;
+  transition: 500ms;
+}
+.dropdown-menu {
+  padding: 5px 0;
+  width: calc(100% - 0px);
+}
+.btn-light:not(:disabled):not(.disabled):active:focus, .btn-light:not(:disabled):not(.disabled).active:focus, .show > .btn-light.dropdown-toggle:focus {
+  box-shadow: none;
+}
+.btn-light:focus, .btn-light.focus {
+
+  box-shadow: none;
 }
 /*
   bootstrap css
@@ -85,23 +102,49 @@ span.time a {
   padding: 5px 0px;
   background: #ffffff;
   border-bottom: 1px solid #f8f9fa;
+  font-size: 16px;
+  line-height: 2.6;
 }
 .navigation a {
-  color: #fff;
   text-decoration: none;
 }
 .navigation .logo {
+  text-align: center;
+}
+.navigation .username {
   text-align: right;
 }
-.navigation .logout {
+.navigation .lang {
   text-align: left;
 }
-.navigation .btn span {
-  color: #01182a;
+.navigation .lang a {
+    color: white;
+}
+@media (max-width: 575px){
+  .navigation .logo , .navigation .username , .navigation .lang {
+     text-align: center;
+     margin: 0 0 10px;
+  }
+}
+.btn-main {
+  background: #a9a9a9;
+  color: #fff;
+  border: none;
+  padding: 0;
+  line-height: 2.4;
+  padding: 0 5px;
 }
 .footer {
   color: #d8d8d8;
   font-size: 13px;
+}
+
+.navigation .br::after {
+  content: "|";
+  color: #fff;
+}
+.navigation .br:last-child:after {
+  content: "";
 }
 .footer a {
   text-decoration: none;
@@ -181,7 +224,29 @@ ul.stepper.horizontal::before {
 }
 /* end stepper */
 
-
-
-
-
+/* login page */
+.login .card {
+  background-color: #ffffffc7;
+}
+.login .btn-login {
+  color: #ffffff;
+  background-color: #163c79;
+  border-color: #163c79;
+}
+.login .btn-login:hover,.login .btn-login:focus {
+  color: #ffffff;
+  background-color: #f28d1e;
+  border-color: #f28d1e;
+  transition: 500ms;
+}
+.form-check-input {
+  margin-right: -1.25rem;
+}
+.login .form-check {
+  padding-left: 0;
+  margin-top: 5px;
+}
+.form-prompt-wrapper {
+  font-size: 12px;
+}
+/* login page */
