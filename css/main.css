@@ -139,11 +139,11 @@ span.time a {
   font-size: 13px;
 }
 
-.navigation .br::after {
+.br::after {
   content: "|";
   color: #fff;
 }
-.navigation .br:last-child:after {
+.br:last-child:after {
   content: "";
 }
 .footer a {
@@ -153,13 +153,12 @@ span.time a {
 .footer p {
   margin: 0;
 }
-.footer .copyrith {
-  text-align: right;
-}
-.footer .support {
-  text-align: left;
-}
 
+@media (max-width: 575px){
+  .footer .copyright {
+    margin-top: 10px;
+  }
+}
 .btn-continue{
   color: #ffffff;
     background-color: #163c79;
