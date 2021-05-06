@@ -1,112 +1,167 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ar">
-  <head>
-    <!-- Required meta tags -->
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <link href="css/font-awesome.min.css" rel="stylesheet" >
-    <link href="css/bootstrap.css" rel="stylesheet" >
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
     <link href="css/font.css" rel="stylesheet">
-    <link href="css/main.css" rel="stylesheet">
-    <title></title>
-  </head>
-  <body class="d-flex flex-column h-100">
-    <div class="overlay"></div>
-    <form action="">
-      <div class="navigation">
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/index.css">
+    <title>موعد</title>
+</head>
+<body>
+    <!-- start header -->
+    <div class="main-header" >
         <div class="container-fluid">
-          <div class="row mb-0">
-            <div class="col-md-6 username">
-              
-            </div>
-            <div class="col-md-6 lang">
-              <div class="d-inline br">
-                <a href="">بوابة الزوار</a>
-              </div>
-              <div class="d-inline br">
-                <a href="">تواصل معنا</a>
-              </div>
-              <div class="d-inline br">
-                <a href="">English</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="container d-flex h-100">
-        <div class="justify-content-center align-self-center w-100">
-          <div class="login">
-            <div class="content">
-              <div class="row text-center">
-                <div class="col-auto m-auto">
-                  <div class="card login-card">
-                    <div class="card-header text-center">
-                      <img src="img/logo-color.png" alt="login" class="login-card-img">
+            <a href="https://www.seu.edu.sa" class="logo text-center">
+                <img src="https://seu.edu.sa/media/5402/new-logo.png"  alt="logo">
+            </a>
+            <div class="row header">
+                <div class="col-md-6">
+                    <div class="username">
+                        <i class="far fa-user" aria-hidden="true"></i>
+                        <span>مرحبا : <b>اسم المستخدم</b></span>
+                        <a href=""><i class="fas fa-sign-out-alt" aria-hidden="true" data-toggle="" data-placement="bottom" title="تسجيل خروج"></i></a>
                     </div>
-                    <div class="card-body">
-                      <h2 class="login-card-title">تسجيل الدخول</h2>
-                      <p class="login-card-description">سجل الدخول الى حسابك للمتابعة</p>
-                      
-                        <div class="form-group">
-                          <label for="email" class="sr-only">البريد الإلكتروني</label>
-                          <input type="email" name="email" id="email" class="form-control" placeholder="البريد الإلكتروني">
-                        </div>
-                        <div class="form-group">
-                          <label for="password" class="sr-only">الرقم السري</label>
-                          <input type="password" name="password" id="password" class="form-control" placeholder="الرقم السري">
-                        </div>
-                        <input name="login" id="login" class="btn btn-block btn-login rounded-0" type="button" value="تسجيل الدخول">
-                        <div class="form-prompt-wrapper">
-                          <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                            <label class="form-check-label" for="defaultCheck1">
-                              تذكرني
-                            </label>
-                          </div>             
-                          <a href="pages/page1.html" class="text-reset">نسيت كلمة المرور ؟</a>
-                        </div>
-                        
-                      </div>
-                  </div>
                 </div>
-              </div>
-  
-  
-  
-  
+                <div class="col-md-6">
+                    <a href="#" class="today">  
+                        <i class="fas fa-calendar-alt"></i>
+                        <span id="date">2 رمضان 1442 هـ</span></a>
+                    
+                </div>
             </div>
-          </div>
+            <div class="row logos">
+                <div class="col-md-6 text-right">
+                    <a>
+                        <img src="https://seu.edu.sa/media/5404/pattern.png" alt="" class="pattern">
+                    </a>
+                </div>
+                
+                <div class="col-md-6 text-left pl-5">
+                    <a href="https://vision2030.gov.sa/" target="_blank">
+                        <img src="https://seu.edu.sa/media/1124/2030.png" alt="" style=" width: 90px; height: 60px">
+                    </a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="img-title text-center">
+                    <div class="title">
+                        <h3>الجامعة السعودية الإلكترونية</h3>
+                        <h4>حجز موعد</h4>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-    </form>
-  
-    <footer class="footer mt-auto">
-      <div class="container-fluid text-center">
-        <div class="row mb-2">
-          <div class="col-md-6 ">
-            <div>الدعم الفني</div>
-            <div class="d-inline br">
-              <a href="">contact@seu.edu.sa</a>
+        <!-- end header-->
+    </div>
+    <!-- end header -->
+    <!-- start content -->
+    <div class="container">
+        <div class="contact-page-inner">
+            <div class="row  text-center">
+                <div class="col text-center welcome-mesg">
+                    <h3>أهلاً و سهلا بك في خدمة حجز المواعيد في الجامعة السعودية الإلكترونية</h3>
+                </div>
             </div>
-            <div class="d-inline br">
-              <a href="">00966112613500</a>
-            </div>
-          </div>
-          <div class="col-md-6 copyright">
-            <div>تطوير عمادة تقنية المعلومات</div>
-            <div>جميع الحقوق محفوظة للجامعة السعودية الإلكترونية © 2021</div>
-          </div>
-        </div>
-      </div>
-    </footer>
+            <div class="row mt-5">
+                <div class="col-12">
+                    <div class="row services">
+                        <div class="col-6 col-md-4">
+                            <a href="" onclick="return false">
+                                <div class="service ">
+                                    <p>طلب جديد</p>
+                                    <i class="fas fa-user-check top"></i>
+                                    
+                                </div>
+                            </a>
+                        </div>
+                        <div>
+                            <div>
     
-    <!--  -->
-    <!--  -->
-    <script src="js/jquery-3.4.1.min.js"></script>
-    <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="js/materialize.min.js"></script>
-    <script src="js/mstepper.min.js"></script>
-    <script src="js/main.js" type="text/javascript"></script>
-  </body>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-4">
+                            <a href="pages/results.html" >
+                                <div class="service on">
+                                    <p>نتيجة القبول</p>
+                                    <i class="fas fa-clipboard-check top"></i>
+                                    
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-6 col-md-4">
+                            <a href="" onclick="return false">
+                                <div class="service on">
+                                    <p>مطابقة الوثائق</p>
+                                    <i class="fas fa-copy top"></i>
+                                    
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-6 col-md-4">
+                            <a href="" onclick="return false">
+                                <div class="service ">
+                                    <p>رفع الوثائق</p>
+                                    <i class="fas fa-file-upload top"></i>
+                                    
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-6 col-md-4">
+                            <a href="" onclick="return false">
+                                <div class="service ">
+                                    <p>سداد الرسوم</p>
+                                    <i class="fas fa-money-bill-wave top"></i>
+                                    
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-6 col-md-4">
+                            <a href="" onclick="return false">
+                                <div class="service on">
+                                    <p>إلغاء القبول</p>
+                                    <i class="fas fa-user-times top"></i>
+                                    
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+<!-- 
+                <div class="col-md-4 col-12 text-center">
+                    <div class="icon-graduation">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                </div>
+-->
+            </div>
+        </div>
+    </div>
+    <!-- end content -->
+    <footer class="footer">
+        <div class="footer-section">
+            <div class="container">
+                <div class="row sub-footer">
+                    <div class="col-md-6 col-sm-6 col-12">
+                        <div class="social-links">
+                            <a href="https://twitter.com/Saudi_EUni" class="twitter" target=" _blank"><i class="fab fa-twitter"></i></a>
+                            <a href="https://www.facebook.com/SaudiElectronicUniversity" class="facebook" target=" _blank"><i class="fab fa-facebook"></i></a>
+                            <a href="https://www.youtube.com/user/SaudiEUniversity" class="youtube" target=" _blank"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-12">
+                        <span class="copyright ">الجامعة السعودية الإلكترونية . جميع الحقوق محفوظة ©2020</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+</body>
 </html>
